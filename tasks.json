@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build C++ Client",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-std=c++17",
+          "-o",
+          "abx_client",
+          "abx_client.cpp",
+          "-lboost_system",
+          "-lpthread"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
